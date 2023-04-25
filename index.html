@@ -29,8 +29,6 @@
             .mytitle {
                 color: white;
 
-                background-color: aqua;
-
                 height: 250px;
 
                 display: flex;
@@ -44,16 +42,16 @@
             }
 
             .mytitle > button {
-                width: 250px;
+                width: 200px;
                 height: 50px;
+                
                 background-color: transparent;
-
-                border: 1px solid white;
                 color: white;
-
+               
+                border: 1px solid white;
                 border-radius: 50px;
 
-                margin-top: 20px;
+                margin-top: 10px;
             }
 
             .mytitle > button:hover {
@@ -71,7 +69,7 @@
             .mypost {
 
                 width: 500px;
-                margin: 20px auto;
+                margin: 20px auto 0px auto;
                 padding: 20px;
 
                 box-shadow: 0 0 3px 0 grey;
@@ -87,6 +85,9 @@
             }
             .mybtn > button {
                 margin-right: 10px;
+            }
+            .mystar {
+                padding: auto;
             }
         </style>
     </head>
@@ -105,12 +106,27 @@
                     placeholder="name@example.com">
                 <label for="floatingInput">영화URL</label>
             </div>
+         
+                <div class="input-group mb-5">
+                    <label class="input-group-text" for="inputGroupSelect01">별점</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option selected> -- 선택하기 -- </option>
+                      <option value="1">⭐</option>
+                      <option value="2">⭐⭐</option>
+                      <option value="3">⭐⭐⭐</option>
+                      <option value="4">⭐⭐⭐⭐</option>
+                      <option value="5">⭐⭐⭐⭐⭐</option>
+                    </select>
+                 
+            </div>
+            <div class="mycomment">
             <div class="form-floating">
                 <textarea
                     class="form-control"
                     placeholder="Leave a comment here"
                     id="floatingTextarea"></textarea>
                 <label for="floatingTextarea">코멘트</label>
+            </div>
             </div>
             <div class="mybtn">
                 <button type="button" class="btn btn-dark">기록하기</button>
